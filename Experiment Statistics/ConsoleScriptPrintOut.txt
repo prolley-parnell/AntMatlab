@@ -1,0 +1,249 @@
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: dice\IPD_RRaP completed in 0.386 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: dice\IPD_CMC_fixvar completed in 0.581 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: dice\Align_RRaP completed in 0.399 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: dice\Align_CMC_fixvar completed in 0.692 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: dice\IPDAlign_RRaP completed in 0.509 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: dice\IPDAlign_CMC_fixvar completed in 0.677 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: plank\IPD_RRaP completed in 0.418 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: plank\IPD_CMC_fixvar completed in 0.633 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: plank\Align_RRaP completed in 0.554 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: plank\Align_CMC_fixvar completed in 0.662 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: plank\IPDAlign_RRaP completed in 0.361 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: plank\IPDAlign_CMC_fixvar completed in 0.51 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\IPD_RRaP completed in 0.478 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\IPD_CMC_fixvar completed in 0.536 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\Align_RRaP completed in 0.389 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\Align_CMC_fixvar completed in 0.553 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\IPDAlign_RRaP completed in 0.417 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\IPDAlign_CMC_fixvar completed in 0.496 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: dice\PCA_RRaP completed in 0.423 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: dice\PCA_CMC_fixvar completed in 0.723 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: plank\PCA_RRaP completed in 0.358 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: plank\PCA_CMC_fixvar completed in 0.469 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\PCA_RRaP completed in 0.297 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\PCA_CMC_fixvar completed in 0.38 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: dice\IPD_RSS completed in 2.56 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: dice\IPD_CGMMC_fixvar completed in 2.09 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: dice\Align_RSS completed in 2 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: dice\Align_CGMMC_fixvar completed in 2.08 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: dice\IPDAlign_RSS completed in 2.01 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: dice\IPDAlign_CGMMC_fixvar completed in 2.14 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: plank\IPD_RSS completed in 2.49 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: plank\IPD_CGMMC_fixvar completed in 2.42 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: plank\Align_RSS completed in 2.27 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: plank\Align_CGMMC_fixvar completed in 2.3 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: plank\IPDAlign_RSS completed in 1.81 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: plank\IPDAlign_CGMMC_fixvar completed in 1.87 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\IPD_RSS completed in 1.5 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\IPD_CGMMC_fixvar completed in 1.75 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\Align_RSS completed in 1.51 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\Align_CGMMC_fixvar completed in 1.76 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\IPDAlign_RSS completed in 1.49 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\IPDAlign_CGMMC_fixvar completed in 1.78 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: dice\PCA_RSS completed in 2.07 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: dice\PCA_CGMMC_fixvar completed in 3.05 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: plank\PCA_RSS completed in 1.94 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: plank\PCA_CGMMC_fixvar completed in 2.51 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\PCA_RSS completed in 1.8 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\PCA_CGMMC_fixvar completed in 1.75 hours.
+IdleTimeout has been reached.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+>> fullExperimentSchedule_overheadScript
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\IPD_RRaP completed in 0.299 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\IPD_CMC_fixvar completed in 0.389 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\Align_RRaP completed in 0.319 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\Align_CMC_fixvar completed in 0.388 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\IPDAlign_RRaP completed in 0.312 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\IPDAlign_CMC_fixvar completed in 0.391 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\PCA_RRaP completed in 0.309 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\PCA_CMC_fixvar completed in 0.396 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\IPD_RSS completed in 1.55 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\IPD_CGMMC_fixvar completed in 1.82 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\Align_RSS completed in 1.54 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\Align_CGMMC_fixvar completed in 1.81 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).
+Experiment named: wedge\IPDAlign_RSS completed in 1.77 hours.
+Parallel pool using the 'DELL XPS 15 ERP' profile is shutting down.
+Starting parallel pool (parpool) using the 'DELL XPS 15 ERP' profile ...
+Connected to the parallel pool (number of workers: 8).

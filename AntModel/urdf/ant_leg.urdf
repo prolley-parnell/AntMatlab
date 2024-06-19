@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<!-- Link Definitions -->
+<robot name="ant_leg">
+<link name="leg_base_link">
+</link>
+
+<!-- *********************************************************** -->
+<!-- Leg -->
+<!-- Link Definitions Leg-->
+
+<link name="leg_base_ball">
+    <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <geometry>
+            <sphere radius="0.07"/>
+        </geometry>
+    </visual>
+</link>
+<link name="leg_link_1">
+    <visual>
+    <origin xyz="0.0 0.0 1.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <cylinder radius="0.05" length="2.0"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+  </link>
+  <link name="leg_knee_ball">
+    <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <geometry>
+            <sphere radius="0.07"/>
+        </geometry>
+    </visual>
+</link>
+  <link name="leg_link_2">
+    <visual>
+    <origin xyz="0.0 0.0 0.9" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <cylinder radius="0.05" length="1.8"/>
+      </geometry>
+    </visual>
+  </link>
+
+    <link name="leg_ankle_ball">
+    <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <geometry>
+            <sphere radius="0.07"/>
+        </geometry>
+    </visual>
+</link>
+    <link name="leg_link_3">
+    <visual>
+    <origin xyz="0.0 0.0 0.45" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <cylinder length="0.9" radius="0.05"/>
+      </geometry>
+    </visual>
+  </link>
+  
+   <link name="leg_tip_ball">
+    <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <geometry>
+            <sphere radius="0.07"/>
+        </geometry>
+    </visual>
+</link>
+<!-- Joint Definition Left Antenna -->
+<joint name="leg_base_yaw" type="revolute">
+  <origin xyz="0.0 0.0 0.0" rpy="0.0 0.45 0.0"/>
+  <parent link="leg_base_link"/>
+  <child link="leg_base_ball"/>
+  <axis xyz="1.0 0.0 0.0"/>
+  <limit lower="-0.55" upper="0.55" effort="0.0" velocity="0.0"/>
+</joint>
+<joint name="leg_base_pitch" type="revolute">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <parent link="leg_base_ball"/>
+    <child link="leg_link_1"/>
+    <axis xyz="0.0 1.0 0.0"/>
+    <limit lower="-0.4" upper="0.55" effort="0.0" velocity="0.0"/>
+</joint>
+
+<joint name="knee_visual" type="fixed">
+    <origin xyz="0.0 0.0 2.0" rpy="0.0 0.0 0.0"/>
+    <parent link="leg_link_1"/>
+    <child link="leg_knee_ball"/>
+</joint>
+
+<joint name="leg_knee_joint" type="revolute">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 2.2 0"/>
+    <parent link="leg_knee_ball"/>
+    <child link="leg_link_2"/>
+    <axis xyz="0.0 1.0 0.0"/>
+    <limit lower="-1.57" upper="0.374" effort="0.0" velocity="0.0"/>
+</joint> 
+
+<joint name="leg_ankle_visual" type="fixed">
+    <origin xyz="0.0 0.0 1.8" rpy="0.0 0.0 0"/>
+    <parent link="leg_link_2"/>
+    <child link="leg_ankle_ball"/>
+</joint> 
+
+<joint name="leg_tip_joint" type="revolute">
+  <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.45 0.0"/>
+  <axis xyz="0.0 1.0 0.0"/>
+  <parent link="leg_ankle_ball"/>
+  <child link="leg_link_3"/>  
+  <limit lower="-0.3" upper="0.3" effort="0.0" velocity="0.0"/>
+</joint>
+
+<joint name="leg_tip_visual" type="fixed">
+    <origin xyz="0.0 0.0 0.9" rpy="0.0 0.0 0"/>
+    <parent link="leg_link_3"/>
+    <child link="leg_tip_ball"/>
+</joint> 
+
+</robot>
+
+
+
+

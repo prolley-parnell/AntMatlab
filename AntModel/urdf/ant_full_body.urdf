@@ -1,0 +1,439 @@
+<?xml version="1.0"?>
+<!-- Link Definitions -->
+<robot name="ant">
+<link name="base_link">
+</link>
+
+<!-- ************************************************************** -->
+<!-- Ant Head Definition -->
+<link name="head">
+    <visual>
+      <geometry>
+        <sphere radius="0.5"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.5"/>
+      </geometry>
+    </collision>
+</link>
+
+<link name="neck">
+    <visual>
+      <geometry>
+        <sphere radius="0.2"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.2"/>
+      </geometry>
+    </collision>
+</link>
+
+ <joint name="neck_joint_1" type="revolute">
+     <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+     <parent link="base_link"/>
+     <child link="neck"/>
+     <axis xyz="1.0 0.0 0.0"/>
+     <limit lower="0.0" upper="0.0" effort="0.0" velocity="0.0"/>
+ </joint>
+
+
+  <!-- Joint Definitions Neck-->
+  <joint name="neck_joint_2" type="revolute">
+     <origin xyz="0.0 0.69 0.2" rpy="0.0 0.0 0.0"/>
+     <parent link="neck"/>
+     <child link="head"/>
+     <axis xyz="0.0 1.0 0.0"/>
+     <limit lower="0.0" upper="0.0" effort="0.0" velocity="0.0"/>
+ </joint>
+<!-- ************************************************************** -->
+ <!-- Ant Mandible Definition -->
+<!-- Link Definitions Mandible-->
+<link name="mandible_base_link">
+    <visual>
+      <geometry>
+        <sphere radius="0.2"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.2"/>
+      </geometry>
+    </collision>
+</link>
+
+<!-- Left Jaw -->
+<link name="left_jaw_base">
+    <visual>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <cylinder radius="0.15" length="0.4"/>
+      </geometry>
+
+    </visual>
+    <collision>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <cylinder radius="0.15" length="0.4"/>
+      </geometry>
+    </collision>
+  </link>
+
+<link name="left_jaw">
+    <visual>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <cylinder radius="0.15" length="0.5"/>
+      </geometry>
+
+    </visual>
+    <collision>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <cylinder radius="0.15" length="0.5"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="left_jaw_tip">
+    <visual>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <sphere radius="0.15"/>
+      </geometry>
+
+    </visual>
+            <collision>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <sphere radius="0.15"/>
+      </geometry>
+    </collision>
+  </link>
+
+<!-- Right Jaw -->
+  <link name="right_jaw_base">
+    <visual>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <cylinder radius="0.15" length="0.4"/>
+      </geometry>
+
+    </visual>
+        <collision>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <cylinder radius="0.15" length="0."/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="right_jaw">
+    <visual>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <cylinder radius="0.15" length="0.5"/>
+      </geometry>
+    </visual>
+    <collision>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <cylinder radius="0.15" length="0.5"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="right_jaw_tip">
+    <visual>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <sphere radius="0.15"/>
+      </geometry>
+
+    </visual>
+        <collision>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <sphere radius="0.15"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Joint Definitions Mandible -->
+ <joint name="left_attachment" type="revolute">
+     <origin xyz="0.2 0.2 0.0" rpy="-0.95 1.7 0.0"/>
+     <parent link="mandible_base_link"/>
+     <child link="left_jaw_base"/>
+     <axis xyz="-1.0 0.0 0.0"/>
+     <limit lower="-0.1" upper="0.5" effort="0.0" velocity="0.0"/>
+ </joint>
+  <joint name="right_attachment" type="revolute">
+     <origin xyz="0.2 -0.2 0.0" rpy="0.95 1.7 0.0"/>
+     <parent link="mandible_base_link"/>
+     <child link="right_jaw_base"/>
+     <axis xyz="1.0 0.0 0.0"/>
+     <limit lower="-0.1" upper="0.5" effort="0.0" velocity="0.0"/>
+ </joint>
+
+
+    <joint name="fixed_left_1" type="fixed">
+     <origin xyz="0.0 -0.1 0.2" rpy="1.3 0.0 0.0"/>
+
+        <parent link="left_jaw_base"/>
+        <child link="left_jaw"/>
+    </joint>
+        <joint name="fixed_left_2" type="fixed">
+        <origin xyz="0.0 0.0 0.3" rpy="1.3 0.0 0.0"/>
+
+        <parent link="left_jaw"/>
+        <child link="left_jaw_tip"/>
+    </joint>
+
+        <joint name="fixed_right_1" type="fixed">
+     <origin xyz="0.0 0.1 0.2" rpy=" -1.3 0.0 0.0"/>
+
+        <parent link="right_jaw_base"/>
+        <child link="right_jaw"/>
+    </joint>
+        <joint name="fixed_right_2" type="fixed">
+        <origin xyz="0.0 0.0 0.3" rpy="-1.3 0.0 0.0"/>
+
+        <parent link="right_jaw"/>
+        <child link="right_jaw_tip"/>
+    </joint>
+
+<!-- Attach mandible to head -->
+ <joint name="head_mandible" type="fixed">
+     <origin xyz="0.0 0.2 -0.2" rpy="0.0 0.3 1.57"/>
+     <axis xyz="0.0 0.0 0.0"/>
+     <parent link="head"/>
+     <child link="mandible_base_link"/>
+ </joint>
+
+
+<!-- *********************************************************** -->
+<!-- Left Antenna -->
+
+<!-- Link Definitions Left Antenna-->
+
+<link name="left_antenna_base">
+    <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <geometry>
+            <box size="0.0 0.0 0.0"/>
+        </geometry>
+    </visual>
+</link>
+<link name="l_pedicel">
+    <visual>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <sphere radius="0.07"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+  </link>
+  <link name="l_scape">
+    <visual>
+    <origin xyz="0.0 0.0 1" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <cylinder length="2" radius="0.05"/>
+      </geometry>
+    </visual>
+    <collision>
+    <origin xyz="0.0 0.0 1" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <cylinder length="2" radius="0.05"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="l_funiculus">
+    <visual>
+    <origin xyz="0.0 0.0 1" rpy="0.0 0.0 0"/>
+      <geometry>
+        <cylinder length="2" radius="0.05"/>
+      </geometry>
+    </visual>
+    <collision>
+    <origin xyz="0.0 0.0 1" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <cylinder length="2" radius="0.05"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="l_tip">
+
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <sphere radius="0.05"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <sphere radius="0.05"/>
+      </geometry>
+    </collision>
+  </link>
+ 
+<!-- Joint Definition Left Antenna -->
+<joint name="l_PS1" type="revolute">
+  <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  <parent link="left_antenna_base"/>
+  <child link="l_pedicel"/>
+  <axis xyz="1.0 0.0 0.0"/>
+  <limit lower="-1.5" upper="0.55" effort="0.0" velocity="0.0"/>
+</joint>
+<joint name="l_PS2" type="revolute">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <parent link="l_pedicel"/>
+    <child link="l_scape"/>
+    <axis xyz="0.0 1.0 0.0"/>
+    <limit lower="-1.4" upper="1.4" effort="0.0" velocity="0.0"/>
+</joint>
+
+<joint name="l_SF1" type="revolute">
+    <origin xyz="0.0 0.0 2" rpy="0.0 1.57 0"/>
+    <parent link="l_scape"/>
+    <child link="l_funiculus"/>
+    <axis xyz="0.0 1.0 0.0"/>
+    <limit lower="-1.57" upper="1.374" effort="0.0" velocity="0.0"/>
+</joint> 
+
+<joint name="l_end_joint" type="fixed">
+  <origin xyz="0.0 0.0 2.0" rpy="0.0 0.0 0.0"/>
+  <axis xyz="0.0 0.0 0.0"/>
+  <parent link="l_funiculus"/>
+  <child link="l_tip"/>  
+</joint>
+
+<!-- Join Left Antenna to Head -->
+<joint name="l_antenna_base_jt" type="fixed">
+  <origin xyz="-0.25 0.2 0.35" rpy="-0.4 0.4 1.57"/>
+  <axis xyz="0.0 0.0 0.0"/>
+  <parent link="head"/>
+  <child link="left_antenna_base"/>  
+</joint> 
+
+<!-- ****************************************************************** -->
+
+<!-- Right Antenna -->
+
+<!-- Link Definitions Right Antenna-->
+
+<link name="right_antenna_base">
+    <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <geometry>
+            <box size="0.0 0.0 0.0"/>
+        </geometry>
+    </visual>
+</link>
+<link name="r_pedicel">
+    <visual>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <sphere radius="0.07"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+  </link>
+  <link name="r_scape">
+    <visual>
+    <origin xyz="0.0 0.0 1" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <cylinder length="2" radius="0.05"/>
+      </geometry>
+    </visual>
+    <collision>
+    <origin xyz="0.0 0.0 1" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <cylinder length="2" radius="0.05"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="r_funiculus">
+    <visual>
+    <origin xyz="0.0 0.0 1" rpy="0.0 0.0 0"/>
+      <geometry>
+        <cylinder length="2" radius="0.05"/>
+      </geometry>
+    </visual>
+    <collision>
+    <origin xyz="0.0 0.0 1" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <cylinder length="2" radius="0.05"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="r_tip">
+
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <sphere radius="0.05"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <sphere radius="0.05"/>
+      </geometry>
+    </collision>
+  </link>
+ 
+<!-- Joint Definition Right Antenna -->
+<joint name="r_PS1" type="revolute">
+  <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  <parent link="right_antenna_base"/>
+  <child link="r_pedicel"/>
+  <axis xyz="1.0 0.0 0.0"/>
+  <limit lower="-0.55" upper="1.5" effort="0.0" velocity="0.0"/>
+</joint>
+<joint name="r_PS2" type="revolute">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <parent link="r_pedicel"/>
+    <child link="r_scape"/>
+    <axis xyz="0.0 1.0 0.0"/>
+    <limit lower="-1.4" upper="1.4" effort="0.0" velocity="0.0"/>
+</joint>
+
+<joint name="r_SF1" type="revolute">
+    <origin xyz="0.0 0.0 2" rpy="0.0 1.57 0"/>
+    <parent link="r_scape"/>
+    <child link="r_funiculus"/>
+    <axis xyz="0.0 1.0 0.0"/>
+    <limit lower="-1.57" upper="1.374" effort="0.0" velocity="0.0"/>
+</joint> 
+
+<joint name="r_end_joint" type="fixed">
+  <origin xyz="0.0 0.0 2.0" rpy="0.0 0.0 0.0"/>
+  <axis xyz="0.0 0.0 0.0"/>
+  <parent link="r_funiculus"/>
+  <child link="r_tip"/>  
+</joint>
+
+<!-- Join Right Antenna to Head -->
+<joint name="r_antenna_base_jt" type="fixed">
+  <origin xyz="0.25 0.2 0.35" rpy="0.4 0.4 1.57"/>
+  <axis xyz="0.0 0.0 0.0"/>
+  <parent link="head"/>
+  <child link="right_antenna_base"/>  
+</joint> 
+
+<!-- ****************************************************************** -->
+
+<!-- Ant Body -->
+
+
+	
+
+</robot>
+
+
+
+
