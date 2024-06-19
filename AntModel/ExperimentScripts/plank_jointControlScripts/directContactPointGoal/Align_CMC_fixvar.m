@@ -12,7 +12,7 @@ clear;
 
 
 %Fill in the char array with the folder location of AntModel
-modelFolder = 'C:\Users\eroll\Documents\MATLAB\Model\ant_grasp_matlab\AntModel\';
+modelFolder = 'C:\Users\eroll\Documents\MATLAB\Model\AntMatlab\AntModel\';
 %Save the current script location
 scriptFolder = pwd;
 cd(modelFolder)

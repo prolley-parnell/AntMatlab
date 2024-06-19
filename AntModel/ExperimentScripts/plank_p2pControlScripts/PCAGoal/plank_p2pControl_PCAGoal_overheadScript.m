@@ -23,4 +23,4 @@ run('.\PCA_CGMMC_fixvar.m')
 run('.\PCA_Close.m')
 
 
-cd('C:\Users\eroll\Documents\MATLAB\Model\ant_grasp_matlab\AntModel\ExperimentScripts')
+cd('C:\Users\eroll\Documents\MATLAB\Model\AntMatlab\AntModel\ExperimentScripts')

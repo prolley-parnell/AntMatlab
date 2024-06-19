@@ -21,4 +21,4 @@ run('.\Last_RRaP.m')
 run('.\Last_CMC_fixvar.m')
 
 
-cd('C:\Users\eroll\Documents\MATLAB\Model\ant_grasp_matlab\AntModel\ExperimentScripts')
+cd('C:\Users\eroll\Documents\MATLAB\Model\AntMatlab\AntModel\ExperimentScripts')

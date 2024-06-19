@@ -1,12 +1,12 @@
 % %% Experiment evaluation for ROBIO Paper August 2023
-experimentPath = 'C:\Users\eroll\Documents\MATLAB\Model\ant_grasp_matlab\AntModel\';
+experimentPath = 'C:\Users\eroll\Documents\MATLAB\Model\AntMatlab\AntModel\';
 % %Save the experiment data
 GPC_dice = GraphPlotClass();
 GPC_plank = GraphPlotClass();
 GPC_wedge = GraphPlotClass();
 GPC_grass_seed = GraphPlotClass();
 % %Add all Experiment Folders
-experimentFolder = 'C:\Users\eroll\Documents\MATLAB\Model\ant_grasp_matlab\AntModel\ExperimentOutput\cppRemoteParallelFunction';
+experimentFolder = 'C:\Users\eroll\Documents\MATLAB\Model\AntMatlab\AntModel\ExperimentOutput\cppRemoteParallelFunction';
 GPC_dice = GPC_dice.loadData([experimentFolder, '\dice']);
 GPC_plank = GPC_plank.loadData([experimentFolder, '\plank']);
 GPC_wedge = GPC_wedge.loadData([experimentFolder, '\wedge']);
@@ -16,7 +16,7 @@ GPC_grass_seed = GPC_grass_seed.loadData([experimentFolder, '\grass_seed']);
 %run(experimentPath + 'ExperimentScripts/baseline_evaluation_scripts/allShapeBaselineScript.m')
 
 %% Import all the baseline values for each shape
-baselineFile = 'C:\Users\eroll\Documents\MATLAB\Model\ant_grasp_matlab\AntModel\ExperimentScripts\baseline_evaluation_scripts\baselineQualityRangeStruct.mat';
+baselineFile = 'C:\Users\eroll\Documents\MATLAB\Model\AntMatlab\AntModel\ExperimentScripts\baseline_evaluation_scripts\baselineQualityRangeStruct.mat';
 load(baselineFile)
 GPC_dice = GPC_dice.addBaselineQualities(diceQualityRange);
 GPC_plank = GPC_plank.addBaselineQualities(plankQualityRange);
@@ -32,7 +32,7 @@ GPC_grass_seed = GPC_grass_seed.renameTableColumns;
 
 %%
 %Load experiment store
-load('C:\Users\eroll\Documents\MATLAB\Model\ant_grasp_matlab\AntModel\ExperimentScripts\GraphPlot\GPC_4shape_ROBIO_v2.mat')
+load('C:\Users\eroll\Documents\MATLAB\Model\AntMatlab\AntModel\ExperimentScripts\GraphPlot\GPC_4shape_ROBIO_v2.mat')
 
 %% Compare dice to baseline (amount of contacts fixed in the code)
 GPC_dice.plotGraspBaselineComparison("all", 1);

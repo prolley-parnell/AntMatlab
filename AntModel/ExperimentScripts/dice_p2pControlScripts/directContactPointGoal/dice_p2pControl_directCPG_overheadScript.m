@@ -49,4 +49,4 @@ run('.\IPDAlign_Close.m')
 %%6.2
 %%run('.\IPDAlign_CGMMC_varinc.m')
 
-cd('C:\Users\eroll\Documents\MATLAB\Model\ant_grasp_matlab\AntModel\ExperimentScripts')
+cd('C:\Users\eroll\Documents\MATLAB\Model\AntMatlab\AntModel\ExperimentScripts')

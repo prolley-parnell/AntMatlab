@@ -6,7 +6,7 @@
 %% Add folders to path
 close all;
 clear;
-modelFolder = 'C:\Users\eroll\Documents\MATLAB\Model\ant_grasp_matlab\AntModel\';
+modelFolder = 'C:\Users\eroll\Documents\MATLAB\Model\AntMatlab\AntModel\';
 scriptFolder = pwd;
 
 cd(modelFolder)
